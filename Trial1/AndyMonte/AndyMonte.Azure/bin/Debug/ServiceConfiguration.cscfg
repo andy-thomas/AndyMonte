@@ -24,7 +24,7 @@
     </ConfigurationSettings>
   </Role>
   <Role name="SimulationRunWorkerRole">
-    <Instances count="1" />
+    <Instances count="6" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>

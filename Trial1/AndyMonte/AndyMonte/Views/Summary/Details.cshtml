@@ -7,9 +7,9 @@
 <h2>Index</h2>
 
 <fieldset>
-    <legend>AggregationSummary</legend>
+    <legend>Aggregation Summary</legend>
 
-    <div class="display-label">MeanDuration</div>
+    <div class="display-label">Mean Duration</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.MeanDuration)
     </div>
@@ -19,14 +19,19 @@
         @Html.DisplayFor(model => model.Variance)
     </div>
 
-    <div class="display-label">ProjectName</div>
+    <div class="display-label">Project Name</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.ProjectName)
     </div>
 
-    <div class="display-label">TaskCount</div>
+    <div class="display-label">@Html.LabelFor(model=>model.TaskCount)</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.TaskCount)
+    </div>
+
+    <div class="display-label">@Html.LabelFor(model => model.CalculationTimeInSeconds)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CalculationTimeInSeconds)
     </div>
 </fieldset>
 

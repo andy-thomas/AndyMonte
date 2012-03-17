@@ -72,12 +72,9 @@ namespace AndyMonte.Controllers
             string projectName = id;
 
             AggregationSummary summary = new ProjectCalculator(projectName, iterationCount).GenerateSummary();
+            summary.CalculationTime = TimeSinceFirstRequest(projectName);
+            AndyTimer.Reset();
 
-            // Send a message in a queue
-            //EnqueueSummaryMessage("hello world 1");
-            //EnqueueSummaryMessage("hello world 2");
-            //EnqueueSummaryMessage("hello world 3"); 
-            
             return View(summary);
         }
 
@@ -90,7 +87,6 @@ namespace AndyMonte.Controllers
             bool calculationIsReady = IsCalculationReady(projectName, iterationCount); //, timeSinceFirstRequest);
             if (calculationIsReady)
             {
-                AndyTimer.Reset();
                 return RedirectToAction("Details", new {id = projectName, iterationCount = iterationCount});
             }
             else

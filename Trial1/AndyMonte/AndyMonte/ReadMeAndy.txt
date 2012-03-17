@@ -2,7 +2,7 @@
 Create GitHub repository and save to repository - done
 Why does counter reset - is there a better way to display elapsed time? - done
 Save to a single table per project, or single partition?
-iterationCount - make common or make part of project?
+iterationCount - make common or make part of project? - done
 Report elapsed time on project summary
 Refactor common code (data source, task aggregator, etc)
 Allow user to specify number of worker processes
