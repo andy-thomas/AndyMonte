@@ -1,0 +1,338 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Global.asax.cs" caret="849" fromTop="14" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Extensions.cs" caret="168" fromTop="8" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:DistributionPoint.cs" caret="293" fromTop="10" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Shared/f:_Layout.cshtml" caret="991" fromTop="17" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Submit.cshtml" caret="0" fromTop="0" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Task.cs" caret="331" fromTop="13" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Details.cshtml" caret="661" fromTop="22" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_Chart.cshtml" caret="0" fromTop="0" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Project.cs" caret="247" fromTop="9" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Waiting.cshtml" caret="287" fromTop="15" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:AggregationSummary.cs" caret="169" fromTop="8" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculationEntry.cs" caret="759" fromTop="13" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:SimulationCalculator.cs" caret="709" fromTop="16" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:TaskAggregator.cs" caret="1612" fromTop="5" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="861" fromTop="14" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="675" fromTop="8" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="1671" fromTop="8" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="844" fromTop="9" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6176" fromTop="15" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="5306" fromTop="19" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_ElapsedTime.cshtml" caret="122" fromTop="4" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6117" fromTop="14" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="5484" fromTop="9" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1112" fromTop="11" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1292" fromTop="4" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1490" fromTop="12" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1339" fromTop="10" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="3261" fromTop="25" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="2940" fromTop="8" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="1258" fromTop="11" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="5870" fromTop="15" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="5683" fromTop="9" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="5749" fromTop="14" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="1825" fromTop="24" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:TaskAggregator.cs" caret="2603" fromTop="15" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="3291" fromTop="16" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="1768" fromTop="15" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1628" fromTop="18" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:TaskAggregator.cs" caret="1612" fromTop="5" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculationEntry.cs" caret="759" fromTop="13" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="4335" fromTop="13" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1876" fromTop="14" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="3336" fromTop="13" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="861" fromTop="14" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="617" fromTop="8" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6235" fromTop="16" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6069" fromTop="11" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1373" fromTop="5" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="844" fromTop="9" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="747" fromTop="23" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_ElapsedTime.cshtml" caret="101" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="string" priority="443" />
+      <Item value="projectName" priority="222" />
+      <Item value="List" priority="189" />
+      <Item value="public" priority="125" />
+      <Item value="double" priority="410" />
+      <Item value="prop" priority="255" />
+      <Item value="int" priority="94" />
+      <Item value="ProjectCalculator`0" priority="95" />
+      <Item value="project" priority="515" />
+      <Item value="Task`0" priority="30" />
+      <Item value="Project`0" priority="63" />
+      <Item value="new" priority="607" />
+      <Item value="Project" priority="28" />
+      <Item value="return" priority="415" />
+      <Item value="List&lt;Task&gt;" priority="28" />
+      <Item value="tasks" priority="63" />
+      <Item value="Task" priority="28" />
+      <Item value="ctor" priority="63" />
+      <Item value="namePrefix" priority="31" />
+      <Item value="Troschuetz" priority="31" />
+      <Item value="Random" priority="26" />
+      <Item value="FisherTippettDistribution`0" priority="26" />
+      <Item value="FisherTippettDistribution" priority="28" />
+      <Item value="randomNumberGenerator" priority="159" />
+      <Item value="taskAggregator" priority="161" />
+      <Item value="TaskAggregator" priority="58" />
+      <Item value="for" priority="63" />
+      <Item value="foreach" priority="95" />
+      <Item value="_project" priority="94" />
+      <Item value="_iterationCount" priority="31" />
+      <Item value="projectAggregatedDuration" priority="63" />
+      <Item value="aggregatedDuration" priority="160" />
+      <Item value="_randomNumberGenerator" priority="127" />
+      <Item value="as" priority="31" />
+      <Item value="task" priority="63" />
+      <Item value="aggregatedDurations" priority="353" />
+      <Item value="List&lt;double&gt;" priority="28" />
+      <Item value="Math`0" priority="31" />
+      <Item value="duration" priority="32" />
+      <Item value="deviations" priority="31" />
+      <Item value="AggregationSummary" priority="28" />
+      <Item value="ProjectName" priority="59" />
+      <Item value="AggregateDurations" priority="32" />
+      <Item value="MeanDuration" priority="32" />
+      <Item value="mean" priority="32" />
+      <Item value="Variance" priority="32" />
+      <Item value="variance" priority="32" />
+      <Item value="TaskCount" priority="32" />
+      <Item value="abacissaCount" priority="31" />
+      <Item value="min" priority="31" />
+      <Item value="source" priority="63" />
+      <Item value="max" priority="31" />
+      <Item value="distributionPoints" priority="128" />
+      <Item value="List&lt;DistributionPoint&gt;" priority="28" />
+      <Item value="abscissaCount" priority="158" />
+      <Item value="distributionPoint" priority="31" />
+      <Item value="maxValue" priority="32" />
+      <Item value="minValue" priority="117" />
+      <Item value="index" priority="31" />
+      <Item value="DistributionPoints" priority="65" />
+      <Item value="Html" priority="89" />
+      <Item value="dataPoints" priority="32" />
+      <Item value="i" priority="31" />
+      <Item value="DistributionPoint" priority="57" />
+      <Item value="ChartAxisTitlePosition`0" priority="31" />
+      <Item value="axis" priority="63" />
+      <Item value="s" priority="31" />
+      <Item value="cmb" priority="31" />
+      <Item value="clb" priority="63" />
+      <Item value="false" priority="31" />
+      <Item value="AcceptVerbsAttribute`0" priority="31" />
+      <Item value="AcceptVerbsAttribute" priority="31" />
+      <Item value="acv" priority="31" />
+      <Item value="XPathBinder`0" priority="31" />
+      <Item value="x" priority="63" />
+      <Item value="true" priority="32" />
+      <Item value="object" priority="63" />
+      <Item value="o" priority="31" />
+      <Item value="ChartAxisOrientation`0" priority="31" />
+      <Item value="this" priority="63" />
+      <Item value="null" priority="63" />
+      <Item value="iterationCount" priority="31" />
+      <Item value="private" priority="31" />
+      <Item value="static" priority="31" />
+      <Item value="DateTime`0" priority="191" />
+      <Item value="_date" priority="32" />
+      <Item value="if" priority="127" />
+      <Item value="_dateTime" priority="127" />
+      <Item value="TimeSpan`0" priority="159" />
+      <Item value="timeSpan" priority="97" />
+      <Item value="startTime" priority="31" />
+      <Item value="timeSinceFirstRequest" priority="58" />
+      <Item value="else" priority="31" />
+      <Item value="View`0" priority="31" />
+      <Item value="AndyTimer`0" priority="31" />
+      <Item value="Model" priority="63" />
+      <Item value="PartialView`0" priority="31" />
+      <Item value="PartialViewResult`0" priority="85" />
+      <Item value="SimulationCalculator`0" priority="26" />
+      <Item value="messageText" priority="31" />
+      <Item value="NonSerializedAttribute`0" priority="31" />
+      <Item value="SerializeToString`0" priority="31" />
+      <Item value="messageObject" priority="31" />
+      <Item value="SerializeFromString`1" priority="31" />
+      <Item value="Calculator" priority="31" />
+      <Item value="calculator" priority="129" />
+      <Item value="ProjectCalculator" priority="57" />
+      <Item value="CalculatorDataSource`0" priority="63" />
+      <Item value="calculatorDataSource" priority="64" />
+      <Item value="CalculatorDataSource" priority="115" />
+      <Item value="queueName" priority="31" />
+      <Item value="dataSource" priority="226" />
+      <Item value="data" priority="32" />
+      <Item value="msg" priority="31" />
+      <Item value="message" priority="31" />
+      <Item value="queue" priority="31" />
+      <Item value="ProjectCalculationEntry" priority="28" />
+      <Item value="Duration" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.Project">
+      <Item value="Name" priority="136" />
+      <Item value="Tasks" priority="108" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="108" />
+      <Item value="Average`0" priority="54" />
+      <Item value="Capacity" priority="26" />
+      <Item value="Count" priority="54" />
+      <Item value="Sort`0" priority="26" />
+      <Item value="Bucketize`0" priority="22" />
+      <Item value="Min`0" priority="26" />
+      <Item value="Max`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Troschuetz.Random.FisherTippettDistribution">
+      <Item value="Alpha" priority="26" />
+      <Item value="Mu" priority="26" />
+      <Item value="NextDouble`0" priority="26" />
+      <Item value="Reset`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.Task">
+      <Item value="Uncertainty" priority="26" />
+      <Item value="Length" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Troschuetz.Random.Distribution">
+      <Item value="Reset`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Pow`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Min`0" priority="26" />
+      <Item value="Max`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.DistributionPoint">
+      <Item value="Duration" priority="26" />
+      <Item value="Probability" priority="49" />
+    </ItemStatistics>
+    <ItemStatistics item="RazorTransitionCompletionContext">
+      <Item value="Html" priority="23" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="RenderPartial`0" priority="26" />
+      <Item value="Display`0" priority="26" />
+      <Item value="ToString`0" priority="22" />
+      <Item value="Label`0" priority="22" />
+      <Item value="Partial`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.AggregationSummary">
+      <Item value="DistributionPoints" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.Web.Mvc.UI.ChartAxisTitlePosition">
+      <Item value="Center" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartBuilder`1">
+      <Item value="CategoryAxis`0" priority="26" />
+      <Item value="ValueAxis`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartCategoryAxisBuilder`1">
+      <Item value="MajorGridLines`0" priority="53" />
+      <Item value="Categories`1" priority="49" />
+      <Item value="MajorTickSize`0" priority="26" />
+      <Item value="Labels`0" priority="26" />
+      <Item value="AxisCrossingValue`0" priority="26" />
+      <Item value="Orientation`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartLineSeriesBuilder`1">
+      <Item value="Markers`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartMarkersBuilder">
+      <Item value="Visible`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartValueAxisFactory`1">
+      <Item value="Numeric`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartNumericAxisBuilder">
+      <Item value="MinorGridLines`0" priority="26" />
+      <Item value="Axis" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Web.Mvc.UI.Fluent.ChartLineBuilder">
+      <Item value="Visible`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.Web.Mvc.UI.ChartAxisOrientation">
+      <Item value="Vertical" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.ProjectCalculationEntry">
+      <Item value="ProjectName" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="26" />
+      <Item value="Value" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="134" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.TimeSpan">
+      <Item value="Seconds" priority="80" />
+      <Item value="TotalSeconds" priority="45" />
+      <Item value="Duration`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToLongTimeString`0" priority="26" />
+      <Item value="AddMinutes`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="HtmlCodeCompletionContext">
+      <Item value="div" priority="11" />
+      <Item value="footer" priority="5" />
+      <Item value="script" priority="5" />
+      <Item value="type" priority="5" />
+      <Item value="text/javascript" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.WindowsAzure.StorageClient.CloudQueueMessage">
+      <Item value="AsString" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.ProjectCalculator">
+      <Item value="InitiateCalculation`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.CalculatorDataSource">
+      <Item value="EnQueue`0" priority="53" />
+      <Item value="DequeueMessage`0" priority="27" />
+      <Item value="GetProjectFromQueueMessage`0" priority="26" />
+      <Item value="AddEntry`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.WindowsAzure.StorageClient.CloudQueue">
+      <Item value="DeleteMessage`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.TaskAggregator">
+      <Item value="GenerateAggregatedDuration`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0\lib</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

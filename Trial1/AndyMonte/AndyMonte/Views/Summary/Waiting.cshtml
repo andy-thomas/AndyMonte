@@ -1,0 +1,24 @@
+﻿@model TimeSpan
+
+@{
+    ViewBag.Title = "Waiting";
+}
+
+<script type="text/javascript">
+    function refresh() {
+        $.get('/Summary/ElapsedTime', function (result) {
+            $('#refreshme').html(result);
+        });
+    }
+    
+    
+    setInterval(refresh, 1000); 
+
+</script>
+
+<h2>Waiting...</h2>
+
+    <div id="refreshme" >
+        @Html.Partial("_ElapsedTime", Model)
+    </div>
+

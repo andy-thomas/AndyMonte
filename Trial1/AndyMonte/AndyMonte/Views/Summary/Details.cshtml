@@ -1,0 +1,41 @@
+﻿@model AndyMonte.Calculator.AggregationSummary
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Index</h2>
+
+<fieldset>
+    <legend>AggregationSummary</legend>
+
+    <div class="display-label">MeanDuration</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MeanDuration)
+    </div>
+
+    <div class="display-label">Variance</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Variance)
+    </div>
+
+    <div class="display-label">ProjectName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProjectName)
+    </div>
+
+    <div class="display-label">TaskCount</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TaskCount)
+    </div>
+</fieldset>
+
+<div>
+		@Html.Partial("_Chart", Model.DistributionPoints)
+</div>
+
+
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Back to Submit", "Submit")
+</p>

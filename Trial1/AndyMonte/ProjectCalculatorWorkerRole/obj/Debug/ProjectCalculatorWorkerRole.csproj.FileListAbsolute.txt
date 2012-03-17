@@ -1,0 +1,17 @@
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.dll.config
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.pdb
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ProjectCalculatorWorkerRole.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ProjectCalculatorWorkerRole.pdb
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Troschuetz.Random.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\AndyMonte.Calculator.pdb
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Troschuetz.Random.xml
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\de\Troschuetz.Random.resources.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\es\Troschuetz.Random.resources.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\fr\Troschuetz.Random.resources.dll

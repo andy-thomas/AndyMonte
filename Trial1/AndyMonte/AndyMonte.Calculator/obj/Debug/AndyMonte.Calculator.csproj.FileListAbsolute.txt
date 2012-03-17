@@ -1,0 +1,12 @@
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\AndyMonte.Calculator.pdb
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\Troschuetz.Random.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\Troschuetz.Random.xml
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\de\Troschuetz.Random.resources.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\es\Troschuetz.Random.resources.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\fr\Troschuetz.Random.resources.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.pdb
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml

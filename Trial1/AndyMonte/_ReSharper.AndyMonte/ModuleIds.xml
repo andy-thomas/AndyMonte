@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="127D81A2-6B3D-4628-A13A-B1B08E539926" ModuleId="AndyMonte" />
+  <Module PersistentId="A21467F4-7883-4B05-8E37-C91793E6C20C" ModuleId="AndyMonte.Calculator" />
+  <Module PersistentId="18D753BD-9307-47B6-8C2E-067270EF4357" ModuleId="ProjectCalculatorWorkerRole" />
+  <Module PersistentId="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="Microsoft.WindowsAzure.StorageClient" />
+  <Module PersistentId="C8C1BC68-58E4-4D23-B626-3D595034ECD8" ModuleId="SimulationRunWorkerRole" />
+</Modules>
