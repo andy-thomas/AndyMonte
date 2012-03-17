@@ -1,5 +1,5 @@
 ﻿TO DO:
-Create GitHub repository and save to repository
+Create GitHub repository and save to repository - done
 Why does counter reset - is there a better way to display elapsed time?
 Clear out data from storage before run if..
 When user enters project data, ask whether to "overwrite existing project if exists"
