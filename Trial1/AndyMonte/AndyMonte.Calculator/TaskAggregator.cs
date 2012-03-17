@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using Microsoft.WindowsAzure.StorageClient;
-using Troschuetz.Random;
+﻿using Troschuetz.Random;
 
 namespace AndyMonte.Calculator
 {
@@ -10,8 +6,7 @@ namespace AndyMonte.Calculator
     {
         private readonly Project _project;
         private readonly Distribution _randomNumberGenerator;
-        private readonly int _iterationCount  ;
-
+        
         public TaskAggregator(Project project, int iterationCount)
             : this (project, new FisherTippettDistribution(), iterationCount)
         {}
@@ -21,26 +16,25 @@ namespace AndyMonte.Calculator
             _project = project;
             _randomNumberGenerator = randomNumberGenerator;
             _randomNumberGenerator.Reset();
-            _iterationCount = iterationCount;
         }
 
-        internal List<double> Aggregate()
-        {
-            // make this ansynchronous
-            // and then this can be delegated out to Azure worker roles
-            // http://www.codeproject.com/Articles/15540/Monte-Carlo-Simulation-Using-Parallel-Asynchronous
+        //internal List<double> Aggregate()
+        //{
+        //    // make this ansynchronous
+        //    // and then this can be delegated out to Azure worker roles
+        //    // http://www.codeproject.com/Articles/15540/Monte-Carlo-Simulation-Using-Parallel-Asynchronous
 
-            List<double> projectAggregatedDuration = new List<double>(_iterationCount);
+        //    List<double> projectAggregatedDuration = new List<double>(_iterationCount);
 
-            for (int i = 0; i < _iterationCount; i++)
-            {
+        //    for (int i = 0; i < _iterationCount; i++)
+        //    {
 
-                // This is the bit which can be sent out to worker roles
-                double aggregatedDuration = GenerateAggregatedDuration();
-                projectAggregatedDuration.Add(aggregatedDuration);
-            }
-            return projectAggregatedDuration;
-        }
+        //        // This is the bit which can be sent out to worker roles
+        //        double aggregatedDuration = GenerateAggregatedDuration();
+        //        projectAggregatedDuration.Add(aggregatedDuration);
+        //    }
+        //    return projectAggregatedDuration;
+        //}
 
         public double GenerateAggregatedDuration()
         {

@@ -66,10 +66,15 @@ namespace AndyMonte.Calculator
         public IEnumerable<ProjectCalculationEntry> GetEntries(string tableName)
         {
             TableServiceContext tableServiceContext = tableClient.GetDataServiceContext();
-            var results = from g in tableServiceContext.CreateQuery<ProjectCalculationEntry>(tableName)
-                          //where g.ProjectName == projectName
+            var query = from g in tableServiceContext.CreateQuery<ProjectCalculationEntry>(tableName)
+                          //where g.ProjectName == projectName                          
                           select g;
-            return results;
+
+            // Read rows if there are more than 1000 - see http://blogs.msdn.com/b/rihamselim/archive/2011/01/06/retrieving-more-the-1000-row-from-windows-azure-storage.aspx
+            var allItemsAsTableService = query.AsTableServiceQuery();
+            IEnumerable<ProjectCalculationEntry> allItems = allItemsAsTableService.Execute();
+
+            return allItems;
         }
 
         public void AddEntry(ProjectCalculationEntry newItem, string tableName)

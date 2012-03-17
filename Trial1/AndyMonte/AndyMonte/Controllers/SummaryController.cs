@@ -112,7 +112,7 @@ namespace AndyMonte.Controllers
                 CalculatorDataSource dataSource = new CalculatorDataSource("simulation");
                 IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(projectName);
                 int count = entries.Count();
-                calculationIsReady = count == iterationCount;
+                calculationIsReady = count >= iterationCount;
 
             }
             catch 

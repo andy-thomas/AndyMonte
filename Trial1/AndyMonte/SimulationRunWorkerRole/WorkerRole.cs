@@ -9,6 +9,7 @@ namespace SimulationRunWorkerRole
 {
     public class WorkerRole : RoleEntryPoint
     {
+        
         public override void Run()
         {
             // This is a sample worker implementation. Replace with your logic.
@@ -35,10 +36,7 @@ namespace SimulationRunWorkerRole
                         Distribution randomNumberGenerator = new FisherTippettDistribution();
 
                         // Create a TaskAggregator, passing in the RNG and the project
-                        const int iterationCount = 100;
-                        TaskAggregator taskAggregator = new TaskAggregator(project, randomNumberGenerator,
-                                                                           iterationCount);
-
+                        TaskAggregator taskAggregator = new TaskAggregator(project, randomNumberGenerator);
                         double aggregatedDuration = taskAggregator.GenerateAggregatedDuration();
                         dataSource.AddEntry(
                             new ProjectCalculationEntry {Duration = aggregatedDuration, ProjectName = project.Name},

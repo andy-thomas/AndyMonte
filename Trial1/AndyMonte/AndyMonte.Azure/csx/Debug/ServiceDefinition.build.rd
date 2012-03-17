@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AndyMonte.Azure" generation="1" functional="0" release="0" Id="1f0200de-5941-4520-bb3d-ff862fc48ec7" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AndyMonte.Azure" generation="1" functional="0" release="0" Id="f96bf440-0a60-400f-a5dc-77e98086d52d" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="AndyMonte.AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -166,9 +166,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="42abf1de-68fb-4483-913a-320ba1e0eea6" ref="Microsoft.RedDog.Contract\ServiceContract\AndyMonte.AzureContract@ServiceDefinition.build">
+    <implementation Id="d6b2a2bb-f3b5-4de8-838f-293cbc6b9646" ref="Microsoft.RedDog.Contract\ServiceContract\AndyMonte.AzureContract@ServiceDefinition.build">
       <interfacereferences>
-        <interfaceReference Id="9be6a0c9-03e6-4fbe-a357-05e94b8ae731" ref="Microsoft.RedDog.Contract\Interface\AndyMonte:Endpoint1@ServiceDefinition.build">
+        <interfaceReference Id="50c3c475-b522-4ece-94f0-c600d6863a16" ref="Microsoft.RedDog.Contract\Interface\AndyMonte:Endpoint1@ServiceDefinition.build">
           <inPort>
             <inPortMoniker name="/AndyMonte.Azure/AndyMonte.AzureGroup/AndyMonte:Endpoint1" />
           </inPort>
