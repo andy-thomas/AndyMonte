@@ -141,6 +141,23 @@ namespace AndyMonte.Calculator
             return null;
         }
 
+        public T GetObjectFromQueueMessage<T>() 
+            where T : class 
+        {
+            // retrieve a new message from the queue
+            CloudQueueMessage msg = queue.GetMessage();
+
+            if (msg != null)
+            {
+                // parse message retrieved from queue
+                T returnObject = SerializeFromString<T>(msg.AsString);
+
+                queue.DeleteMessage(msg);
+                return returnObject;
+            }
+            return null;
+        }
+
         public string DequeueMessage()
         {
             string message = null;

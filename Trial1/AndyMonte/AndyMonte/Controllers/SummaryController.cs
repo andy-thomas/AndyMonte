@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using AndyMonte.Calculator;
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.StorageClient;
 
 namespace AndyMonte.Controllers
 {
@@ -24,40 +20,40 @@ namespace AndyMonte.Controllers
 
         public ActionResult Submit()
         {
-            TimeSpan xxx = DateTime.Now - DateTime.Now.AddMinutes(-2);
-
-            return View();
+            CalculationParameters parameters = new CalculationParameters {IterationCount = 100};
+            return View(parameters);
         }
 
         // POST: /Home/Submit
         // Controler method for handling submissions from the submission
         // form 
         [HttpPost]
-        public ActionResult Submit(AggregationSummary aggregationSummary)
+        public ActionResult Submit(CalculationParameters calculationParameters)
         {
             if (ModelState.IsValid)
             {
                 // Will put code for submitting to queue here.
-                string projectName = aggregationSummary.ProjectName;
+                string projectName = calculationParameters.ProjectName;
+                int iterationCount = calculationParameters.IterationCount;
 
-                InitiateCalculation(projectName);
+                InitiateCalculation(calculationParameters);
                 //new ProjectCalculator(projectName).InitiateCalculation();
 
-                return RedirectToAction("Waiting", new { id = projectName });
+                return RedirectToAction("Waiting", new { id = projectName, iterationCount = iterationCount });
                 //return RedirectToAction("Details", new { id = projectName });
                 //return View("Details", summary);
 
             }
             else
             {
-                return View(aggregationSummary);
+                return View(calculationParameters);
             }
         }
 
-        private void InitiateCalculation(string projectName)
+        private void InitiateCalculation(CalculationParameters calculationParameters)
         {
             CalculatorDataSource dataSource = new CalculatorDataSource("main");
-            dataSource.EnQueue(projectName);
+            dataSource.EnQueue(calculationParameters);
         }
 
         //public ActionResult Index()
@@ -70,12 +66,12 @@ namespace AndyMonte.Controllers
         //
         // GET: /Summary/Details/5
 
-        public ActionResult Details(string id) //, AggregationSummary summary)
+        public ActionResult Details(string id, int iterationCount) //, AggregationSummary summary)
         {
             Console.WriteLine(id);
             string projectName = id;
-            
-             AggregationSummary summary = new ProjectCalculator(projectName).GenerateSummary();
+
+            AggregationSummary summary = new ProjectCalculator(projectName, iterationCount).GenerateSummary();
 
             // Send a message in a queue
             //EnqueueSummaryMessage("hello world 1");
@@ -87,15 +83,15 @@ namespace AndyMonte.Controllers
 
 
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
-        public ActionResult Waiting(string id)
+        public ActionResult Waiting(string id, int iterationCount)
         {
             string projectName = id;
             TimeSpan timeSinceFirstRequest = TimeSinceFirstRequest(projectName);
-            bool calculationIsReady = IsCalculationReady(projectName, timeSinceFirstRequest);
+            bool calculationIsReady = IsCalculationReady(projectName, iterationCount); //, timeSinceFirstRequest);
             if (calculationIsReady)
             {
                 AndyTimer.Reset();
-                return RedirectToAction("Details", new {id = projectName});
+                return RedirectToAction("Details", new {id = projectName, iterationCount = iterationCount});
             }
             else
             {
@@ -108,9 +104,9 @@ namespace AndyMonte.Controllers
             }
         }
 
-        private static bool IsCalculationReady(string projectName, TimeSpan timeSinceFirstRequest)
+        private static bool IsCalculationReady(string projectName, int iterationCount) //, TimeSpan timeSinceFirstRequest)
         {
-            // TODO: Go to the storage and find if all the simulation calculations have been returned
+            // Go to the storage and find if all the simulation calculations have been returned
 
             //bool calculationIsReady = timeSinceFirstRequest.Seconds > 10; // HACK
             bool calculationIsReady = false;
@@ -120,7 +116,6 @@ namespace AndyMonte.Controllers
                 CalculatorDataSource dataSource = new CalculatorDataSource("simulation");
                 IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(projectName);
                 int count = entries.Count();
-                int iterationCount = 100; // TODO: feed this through to the worker roles - maybe part of the project?
                 calculationIsReady = count == iterationCount;
 
             }
@@ -133,6 +128,7 @@ namespace AndyMonte.Controllers
 
         private static TimeSpan TimeSinceFirstRequest(string projectName)
         {
+            // TODO Make the elapsed time project-specific
             // Get the time since the calculations started for this project
             // For now, let's just use a dummy "AndyTimer" class to deal with all/any projects
             DateTime startTime = AndyTimer.GetTime();
@@ -149,107 +145,107 @@ namespace AndyMonte.Controllers
             return PartialView("_ElapsedTime", timeSinceFirstRequest);
         }
 
+        #region Unused Code
+        ////
+        //// GET: /Summary/Create
 
-        //
-        // GET: /Summary/Create
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //} 
 
-        public ActionResult Create()
-        {
-            return View();
-        } 
+        ////
+        //// POST: /Summary/Create
 
-        //
-        // POST: /Summary/Create
+        //[HttpPost]
+        //public ActionResult Create(FormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add insert logic here
 
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
+        //        return RedirectToAction("Index");
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-        
-        //
-        // GET: /Summary/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        ////
+        //// GET: /Summary/Edit/5
 
-        //
-        // POST: /Summary/Edit/5
+        //public ActionResult Edit(int id)
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        ////
+        //// POST: /Summary/Edit/5
 
-        //
-        // GET: /Summary/Delete/5
- 
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //[HttpPost]
+        //public ActionResult Edit(int id, FormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add update logic here
 
-        //
-        // POST: /Summary/Delete/5
+        //        return RedirectToAction("Index");
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        ////
+        //// GET: /Summary/Delete/5
 
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
-        private void EnqueueSummaryMessage(string messageText)
-        {
-            //http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/
+        ////
+        //// POST: /Summary/Delete/5
 
-            // Retrieve storage account from connection-string
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-                RoleEnvironment.GetConfigurationSettingValue("AndyMonteStorageConnectionString"));
+        //[HttpPost]
+        //public ActionResult Delete(int id, FormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add delete logic here
 
-            // Create the queue client
-            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+        //        return RedirectToAction("Index");
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-            // Retrieve a reference to a queue
-            CloudQueue queue = queueClient.GetQueueReference("myqueue");
+        //private void EnqueueSummaryMessage(string messageText)
+        //{
+        //    //http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/
 
-            // Create the queue if it doesn't already exist
-            queue.CreateIfNotExist();
+        //    // Retrieve storage account from connection-string
+        //    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+        //        RoleEnvironment.GetConfigurationSettingValue("AndyMonteStorageConnectionString"));
 
-            // Create a message and add it to the queue
-            CloudQueueMessage message = new CloudQueueMessage(messageText);
-            queue.AddMessage(message);
-        }
+        //    // Create the queue client
+        //    CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+
+        //    // Retrieve a reference to a queue
+        //    CloudQueue queue = queueClient.GetQueueReference("myqueue");
+
+        //    // Create the queue if it doesn't already exist
+        //    queue.CreateIfNotExist();
+
+        //    // Create a message and add it to the queue
+        //    CloudQueueMessage message = new CloudQueueMessage(messageText);
+        //    queue.AddMessage(message);
+        //} 
+        #endregion
 
     }
 

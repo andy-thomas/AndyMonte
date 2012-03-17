@@ -1,24 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Microsoft.WindowsAzure.StorageClient;
-using Troschuetz.Random;
 
 namespace AndyMonte.Calculator
 {
     public class ProjectCalculator
     {
-        private string projectName;
+        private readonly string _projectName;
+        private readonly int _iterationCount;
 
-        public ProjectCalculator(string projectName)
+        public ProjectCalculator(string projectName, int iterationCount)
         {
-            this.projectName = projectName;
+            _projectName = projectName;
+            _iterationCount = iterationCount;
         }
 
         public AggregationSummary GenerateSummary()
         {
-            Project project = GetProject(projectName);
+            Project project = GetProject(_projectName);
             
 
             //-------------------------------------------------------------------------------------------------
@@ -34,15 +33,15 @@ namespace AndyMonte.Calculator
             //List<double> aggregatedDurations = taskAggregator.Aggregate();
             //-------------------------------------------------------------------------------------------------
 
-            // TODO: Get the list of aggregated durations from Azure storage
-            CalculatorDataSource dataSource = new CalculatorDataSource(projectName);
-            IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(projectName);
-  
-            List<double> aggregatedDurations = new List<double>();
-            foreach (ProjectCalculationEntry projectCalculationEntry in entries)
-            {
-                aggregatedDurations.Add(projectCalculationEntry.Duration);
-            }
+            // Get the list of aggregated durations from Azure storage
+            CalculatorDataSource dataSource = new CalculatorDataSource(_projectName);
+            IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(_projectName);
+
+            //foreach (ProjectCalculationEntry projectCalculationEntry in entries)
+            //{
+            //    aggregatedDurations.Add(projectCalculationEntry.Duration);
+            //}
+            List<double> aggregatedDurations = entries.Select(projectCalculationEntry => projectCalculationEntry.Duration).ToList();
 
             // Calculate the mean and variance
             double mean = CalculateMean(aggregatedDurations);
@@ -52,7 +51,8 @@ namespace AndyMonte.Calculator
             List<DistributionPoint> dataPoints = TransformToDistribuion(aggregatedDurations);
 
             // Create and return an AggregationSummary, passing in the List, mean, variance and task count and project name
-            return new AggregationSummary() { 
+            return new AggregationSummary
+                       { 
                 ProjectName = project.Name,
                 DistributionPoints = dataPoints,
                 MeanDuration = mean,
@@ -63,7 +63,7 @@ namespace AndyMonte.Calculator
 
         private List<DistributionPoint> TransformToDistribuion(List<double> aggregatedDurations)
         {
-            int abscissaCount = 50;
+            const int abscissaCount = 50;
             List<DistributionPoint> distributionPoints = new List<DistributionPoint>(abscissaCount);
             for (int i = 0; i < abscissaCount; i++)
             {
@@ -127,38 +127,35 @@ namespace AndyMonte.Calculator
         private List<Task> SeedTasks()
         {
             const string namePrefix = "Test Task";
-            List<Task> tasks = new List<Task>();
-            tasks.Add(new Task(namePrefix, 10, 2));
-            tasks.Add(new Task(namePrefix, 30, 5));
-            tasks.Add(new Task(namePrefix, 5, 2));
-            tasks.Add(new Task(namePrefix, 50, 6));
+            List<Task> tasks = new List<Task>
+                                   {
+                                       new Task(namePrefix, 10, 2),
+                                       new Task(namePrefix, 30, 5),
+                                       new Task(namePrefix, 5, 2),
+                                       new Task(namePrefix, 50, 6)
+                                   };
 
             return tasks;
         }
 
         //========================
 
-        // This is used by the web site. 
+        // This is used by the ProjectCalculator Worker Role 
         // It fires off messages to the Azure queue
         // which will get picked up by the service (which also uses this class!)
         public void InitiateCalculation()
         {
-            Project project = GetProject(projectName);
+            Project project = GetProject(_projectName);
 
             // Create a TaskAggregator, passing in the project
-            int iterationCount = 100; //TODO: Centralise the variable
             CalculatorDataSource calculatorDataSource = new CalculatorDataSource("simulation");
 
-            for (int i = 0; i < iterationCount; i++)
+            // For each simulation run, queue a message to simulate the project estimation
+            for (int i = 0; i < _iterationCount; i++)
             {
-                //  _project.Tasks
-
-                // queue a message to process the image
                 calculatorDataSource.EnQueue(project);
-
-                //CloudQueueMessage message = new CloudQueueMessage(String.Format("{0},{1},{2}", uri, entry.PartitionKey, entry.RowKey));
-                //queue.AddMessage(message);
             }
         }
     }
+
 }

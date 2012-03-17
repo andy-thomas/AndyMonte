@@ -1,4 +1,4 @@
-﻿@model AndyMonte.Calculator.AggregationSummary
+﻿@model AndyMonte.Calculator.CalculationParameters
 
 @{
     ViewBag.Title = "Submit";
@@ -20,6 +20,14 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.ProjectName)
             @Html.ValidationMessageFor(model => model.ProjectName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IterationCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IterationCount)
+            @Html.ValidationMessageFor(model => model.IterationCount)
         </div>
 
         <p>

@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
+// ReSharper disable FunctionNeverReturns
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Threading;
 using AndyMonte.Calculator;
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.StorageClient;
 using Troschuetz.Random;
 
 namespace SimulationRunWorkerRole
@@ -22,12 +16,11 @@ namespace SimulationRunWorkerRole
 
             while (true)
             {
-                Thread.Sleep(200);
+                //Thread.Sleep(200);
                 // Make the simulation process a long running calculation ~200ms
                 // (If it is too quick, you do not see the difference when adding new worker processes)
                 //Trace.WriteLine("Working", "Information");
 
-                // TODO Andy
                 // Pick up a message from the "simulation" message queue.
                 // Create a TaskAggregator and call GenerateAggregatedDuration
                 // Save the simulation result (project name, run number, calculated duration)
@@ -69,3 +62,5 @@ namespace SimulationRunWorkerRole
         }
     }
 }
+
+// ReSharper restore FunctionNeverReturns

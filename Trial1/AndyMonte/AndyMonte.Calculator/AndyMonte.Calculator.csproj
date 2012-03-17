@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AggregationSummary.cs" />
+    <Compile Include="CalculationParameters.cs" />
     <Compile Include="CalculatorDataSource.cs" />
     <Compile Include="DistributionPoint.cs" />
     <Compile Include="Extensions.cs" />

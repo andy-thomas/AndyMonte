@@ -1,11 +1,9 @@
-using System;
+// ReSharper disable FunctionNeverReturns
 using System.Diagnostics;
 using System.Net;
 using System.Threading;
 using AndyMonte.Calculator;
-using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.StorageClient;
 
 namespace ProjectCalculatorWorkerRole
 {
@@ -18,10 +16,9 @@ namespace ProjectCalculatorWorkerRole
 
             while (true)
             {
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 //Trace.WriteLine("Working", "Information");
 
-                // TODO Andy
                 // Pick up messages from the "Main" message queue sent from the website
                 // which provides info about the project (name, number of tasks, etc)
 
@@ -32,13 +29,23 @@ namespace ProjectCalculatorWorkerRole
                 // This will get picked up by a different worker process.
                 using (CalculatorDataSource dataSource = new CalculatorDataSource("main"))
                 {
-                    string projectName = dataSource.DequeueMessage();
-
-                    if (!string.IsNullOrEmpty(projectName))
+                    CalculationParameters calculationParameters =
+                        dataSource.GetObjectFromQueueMessage<CalculationParameters>();
+                    if (calculationParameters != null)
                     {
-                        // Now we have the project name, create a new Calculator and initiate the calculation
-                        ProjectCalculator calculator = new ProjectCalculator(projectName);
-                        calculator.InitiateCalculation();
+                        string projectName = calculationParameters.ProjectName;
+                        int iterationCount = calculationParameters.IterationCount;
+
+                        if (!string.IsNullOrEmpty(projectName))
+                        {
+                            // Now we have the project name, create a new Calculator and initiate the calculation
+                            ProjectCalculator calculator = new ProjectCalculator(projectName, iterationCount);
+                            calculator.InitiateCalculation();
+
+
+                            // Now we have initiated a project, we can pause for a while
+                            Thread.Sleep(100000);
+                        }
                     }
                 }
 
@@ -90,3 +97,5 @@ namespace ProjectCalculatorWorkerRole
         }
     }
 }
+
+// ReSharper restore FunctionNeverReturns
