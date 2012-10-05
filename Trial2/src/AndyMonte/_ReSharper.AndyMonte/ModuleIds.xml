@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD" ModuleId="SimulationRunWorkerRole" />
+  <Module PersistentId="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2" ModuleId="AndyMonte.Web" />
+  <Module PersistentId="60408901-1C62-4948-BBE7-5234C9D6D374" ModuleId="AndyMonte.Calculator" />
+  <Module PersistentId="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB" ModuleId="ProjectCalculatorWorkerRole" />
+</Modules>

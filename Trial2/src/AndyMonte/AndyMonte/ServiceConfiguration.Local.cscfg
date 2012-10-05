@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AndyMonte" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="AndyMonte.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="ProjectCalculatorWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="SimulationRunWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

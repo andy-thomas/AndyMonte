@@ -1,0 +1,27 @@
+﻿@using Telerik.Web.Mvc.UI
+@model IEnumerable<AndyMonte.Calculator.DistributionPoint>
+
+@(Html.Telerik().Chart(Model)
+        .Name("chart")
+        .Title(title => title
+            .Text("Project Duration"))
+                //.Series(series => series
+                //    .Line(s => s.Probability)
+                //    .Name("Probability")
+                //    .Markers(cmb => cmb.Visible(true)))
+                .Series(series => series
+                        .Line(s => s.Count)
+                        .Name("Count")
+                        .Markers(cmb => cmb.Visible(false)))
+                
+                .CategoryAxis(axis => axis.Categories(s => s.Probability)
+                    .MajorTickSize(1)
+                    .Labels(false)
+                    .MajorGridLines(clb=>clb.Visible(false))
+                    )
+                .ValueAxis(axis => axis
+                    .Numeric()
+                    .MinorGridLines(clb=>clb.Visible(false))                  
+                    )
+                .HtmlAttributes(new { style = "width: 600px; height: 400px;" })
+    )

@@ -1,33 +1,31 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Global.asax.cs" caret="849" fromTop="14" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Extensions.cs" caret="168" fromTop="8" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:DistributionPoint.cs" caret="293" fromTop="10" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Shared/f:_Layout.cshtml" caret="991" fromTop="17" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Task.cs" caret="331" fromTop="13" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_Chart.cshtml" caret="0" fromTop="0" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:Project.cs" caret="247" fromTop="9" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Waiting.cshtml" caret="287" fromTop="15" />
-      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculationParameters.cs" caret="476" fromTop="16" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_ElapsedTime.cshtml" caret="0" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Details.cshtml" caret="96" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Submit.cshtml" caret="1144" fromTop="25" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculationEntry.cs" caret="759" fromTop="13" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:SimulationCalculator.cs" caret="709" fromTop="16" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:AggregationSummary.cs" caret="733" fromTop="21" />
       <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="189" fromTop="0" />
-      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="3405" fromTop="20" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:TaskAggregator.cs" caret="1438" fromTop="13" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6266" fromTop="18" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="262" fromTop="4" />
       <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1547" fromTop="12" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="4313" fromTop="13" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="0" fromTop="0" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculationParameters.cs" caret="136" fromTop="5" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_Chart.cshtml" caret="0" fromTop="0" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1797" fromTop="43" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Waiting.cshtml" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="3217" fromTop="14" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Details.cshtml" caret="1081" fromTop="40" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Submit.cshtml" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="95" fromTop="2" />
-      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="657" fromTop="13" />
       <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="43" fromTop="1" />
       <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="3823" fromTop="14" />
       <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="4261" fromTop="25" />
@@ -56,6 +54,8 @@
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="2982" fromTop="13" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="3405" fromTop="20" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="4269" fromTop="9" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1484" fromTop="17" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="193" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>

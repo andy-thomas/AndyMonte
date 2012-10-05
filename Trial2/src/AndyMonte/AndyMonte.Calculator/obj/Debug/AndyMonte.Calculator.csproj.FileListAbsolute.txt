@@ -1,0 +1,8 @@
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\AndyMonte.Calculator.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Troschuetz.Random.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.pdb

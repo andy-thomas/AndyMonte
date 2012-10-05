@@ -1,0 +1,15 @@
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.dll.config
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.ServiceBus.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.ServiceBus.xml
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\obj\Debug\SimulationRunWorkerRole.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\obj\Debug\SimulationRunWorkerRole.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\Troschuetz.Random.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\SimulationRunWorkerRole\bin\Debug\AndyMonte.Calculator.pdb

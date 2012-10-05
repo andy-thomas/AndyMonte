@@ -1,0 +1,15 @@
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.dll.config
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\ProjectCalculatorWorkerRole.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.ServiceBus.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.ServiceBus.xml
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ProjectCalculatorWorkerRole.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\obj\Debug\ProjectCalculatorWorkerRole.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\Troschuetz.Random.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\ProjectCalculatorWorkerRole\bin\Debug\AndyMonte.Calculator.pdb

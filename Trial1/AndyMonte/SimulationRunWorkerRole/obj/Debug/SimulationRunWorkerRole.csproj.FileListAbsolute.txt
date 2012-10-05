@@ -15,3 +15,15 @@ C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debu
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\de\Troschuetz.Random.resources.dll
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\es\Troschuetz.Random.resources.dll
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\fr\Troschuetz.Random.resources.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.dll.config
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\SimulationRunWorkerRole.pdb
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\AndyMonte.Calculator.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\AndyMonte.Calculator.pdb
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\obj\Debug\SimulationRunWorkerRole.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\SimulationRunWorkerRole\obj\Debug\SimulationRunWorkerRole.pdb

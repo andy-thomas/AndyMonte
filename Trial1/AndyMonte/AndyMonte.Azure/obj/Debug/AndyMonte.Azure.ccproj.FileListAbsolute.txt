@@ -52,3 +52,4 @@ C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Azure\obj\Debug\Simula
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Azure\obj\Debug\SimulationRunWorkerRole\SimulationRunWorkerRole.dll.config
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Azure\obj\Debug\SimulationRunWorkerRole\SimulationRunWorkerRole.pdb
 C:\Projects\Personal\AndyMonte\Trial1\AndyMonte\AndyMonte.Azure\obj\Debug\SimulationRunWorkerRole\Troschuetz.Random.dll
+C:\Projects\AndyMonte\Trial1\AndyMonte\AndyMonte.Azure\bin\Debug\ServiceConfiguration.cscfg
