@@ -42,6 +42,7 @@ namespace AndyMonte.Calculator
             {
                 // Crap - why does the one of the roles not have the connection string correctly configured????
                 connectionString = @"UseDevelopmentStorage=true";
+                connectionString = @"DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==";
             }
 
             storageAccount = CloudStorageAccount.Parse(connectionString);

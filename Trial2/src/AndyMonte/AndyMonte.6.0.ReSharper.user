@@ -1,15 +1,15 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="523" fromTop="14" />
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:App_Start/f:RouteConfig.cs" caret="377" fromTop="15" />
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/f:Global.asax.cs" caret="704" fromTop="10" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:CalculatorDataSource.cs" caret="2899" fromTop="3" />
       <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculationEntry.cs" caret="335" fromTop="12" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:TaskAggregator.cs" caret="16" fromTop="0" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="939" fromTop="17" />
       <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="2455" fromTop="0" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="1557" fromTop="22" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:TaskAggregator.cs" caret="16" fromTop="0" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="7530" fromTop="15" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:CalculatorDataSource.cs" caret="1269" fromTop="25" />
     </RecentFiles>
     <RecentEdits>
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="8532" fromTop="34" />

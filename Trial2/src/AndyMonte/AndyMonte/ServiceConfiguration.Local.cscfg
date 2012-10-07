@@ -4,6 +4,7 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
     </ConfigurationSettings>
   </Role>
   <Role name="ProjectCalculatorWorkerRole">
@@ -11,6 +12,7 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
     </ConfigurationSettings>
   </Role>
   <Role name="SimulationRunWorkerRole">
@@ -18,6 +20,7 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

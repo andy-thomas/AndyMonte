@@ -14,6 +14,9 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <ConfigurationSettings>
+      <Setting name="AndyMonteStorageConnectionString" />
+    </ConfigurationSettings>
   </WebRole>
   <WorkerRole name="ProjectCalculatorWorkerRole" vmsize="Small">
     <Imports>
@@ -21,6 +24,7 @@
     </Imports>
     <ConfigurationSettings>
       <Setting name="Microsoft.ServiceBus.ConnectionString" />
+      <Setting name="AndyMonteStorageConnectionString" />
     </ConfigurationSettings>
   </WorkerRole>
   <WorkerRole name="SimulationRunWorkerRole" vmsize="Small">
@@ -29,6 +33,7 @@
     </Imports>
     <ConfigurationSettings>
       <Setting name="Microsoft.ServiceBus.ConnectionString" />
+      <Setting name="AndyMonteStorageConnectionString" />
     </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>
