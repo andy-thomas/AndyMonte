@@ -18,22 +18,23 @@ namespace AndyMonte.Calculator
         private static CloudStorageAccount storageAccount;
         private CloudTableClient tableClient;
 
-        private const string messageImageBlobName = "andymonteblobs"; //Note: All letters in a container name must be lowercase. For more restrictions on container names, see http://msdn.microsoft.com/en-us/library/dd135715.aspx
-        private CloudBlobClient blobClient;
-        private CloudBlobContainer blobContainer;
+        //private const string messageImageBlobName = "andymonteblobs"; //Note: All letters in a container name must be lowercase. For more restrictions on container names, see http://msdn.microsoft.com/en-us/library/dd135715.aspx
+        //private CloudBlobClient blobClient;
+        //private CloudBlobContainer blobContainer;
 
         private string messageQueueName; //= "andymontequeue"; //queue name must be in lower case
         private CloudQueueClient queueClient;
         private CloudQueue queue;
 
-        public CalculatorDataSource() : this("andymontequeue")
+        public CalculatorDataSource() : this("main")
         {
         }
 
         public CalculatorDataSource(string queueName)
         {
             string connectionString;
-           messageQueueName = queueName;
+            messageQueueName = queueName;
+
             try
             {
                 connectionString = RoleEnvironment.GetConfigurationSettingValue(connectionStringName);
@@ -42,7 +43,7 @@ namespace AndyMonte.Calculator
             {
                 // Crap - why does the one of the roles not have the connection string correctly configured????
                 connectionString = @"UseDevelopmentStorage=true";
-                connectionString = @"DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==";
+                //connectionString = @"DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==";
             }
 
             storageAccount = CloudStorageAccount.Parse(connectionString);
@@ -50,13 +51,13 @@ namespace AndyMonte.Calculator
             tableClient.RetryPolicy = RetryPolicies.Retry(3, TimeSpan.FromSeconds(1));
             tableClient.CreateTableIfNotExist(messageTableName);
             
-            blobClient = storageAccount.CreateCloudBlobClient();
-            blobContainer = blobClient.GetContainerReference(messageImageBlobName);
-            blobContainer.CreateIfNotExist();
+            //blobClient = storageAccount.CreateCloudBlobClient();
+            //blobContainer = blobClient.GetContainerReference(messageImageBlobName);
+            //blobContainer.CreateIfNotExist();
 
-            var permissions = blobContainer.GetPermissions();
-            permissions.PublicAccess = BlobContainerPublicAccessType.Container;
-            blobContainer.SetPermissions(permissions);
+            //var permissions = blobContainer.GetPermissions();
+            //permissions.PublicAccess = BlobContainerPublicAccessType.Container;
+            //blobContainer.SetPermissions(permissions);
 
             //create queue
             queueClient = storageAccount.CreateCloudQueueClient();
@@ -95,16 +96,16 @@ namespace AndyMonte.Calculator
             }
         }
 
-        public string AddBlob(string fileExtension, string fileContentType, Stream fileContent)
-        {
-            // upload the image to blob storage
+        //public string AddBlob(string fileExtension, string fileContentType, Stream fileContent)
+        //{
+        //    // upload the image to blob storage
 
-            string uniqueBlobName = string.Format(messageImageBlobName + "/image_{0}{1}", Guid.NewGuid().ToString(), fileExtension);
-            CloudBlockBlob blob = blobClient.GetBlockBlobReference(uniqueBlobName);
-            blob.Properties.ContentType = fileContentType;
-            blob.UploadFromStream(fileContent);
-            return blob.Uri.ToString();
-        }
+        //    string uniqueBlobName = string.Format(messageImageBlobName + "/image_{0}{1}", Guid.NewGuid().ToString(), fileExtension);
+        //    CloudBlockBlob blob = blobClient.GetBlockBlobReference(uniqueBlobName);
+        //    blob.Properties.ContentType = fileContentType;
+        //    blob.UploadFromStream(fileContent);
+        //    return blob.Uri.ToString();
+        //}
 
         //add message to the queue
         public void EnQueue(string uri, ProjectCalculationEntry entry)
@@ -281,8 +282,8 @@ namespace AndyMonte.Calculator
         {
             storageAccount = null;
             tableClient = null;
-            blobClient = null;
-            blobContainer = null;
+            //blobClient = null;
+            //blobContainer = null;
             queueClient = null;
             queue = null;
         }

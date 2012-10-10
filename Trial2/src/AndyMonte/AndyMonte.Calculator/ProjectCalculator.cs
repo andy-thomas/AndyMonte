@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.ServiceBus;
+using Microsoft.ServiceBus.Messaging;
+using Microsoft.WindowsAzure;
 
 namespace AndyMonte.Calculator
 {
@@ -8,6 +11,7 @@ namespace AndyMonte.Calculator
     {
         private readonly string _projectName;
         private readonly int _iterationCount;
+        private const bool UseMessageBus = true;
 
         public ProjectCalculator(string projectName, int iterationCount)
         {
@@ -34,7 +38,7 @@ namespace AndyMonte.Calculator
             //-------------------------------------------------------------------------------------------------
 
             // Get the list of aggregated durations from Azure storage
-            CalculatorDataSource dataSource = new CalculatorDataSource(_projectName);
+            CalculatorDataSource dataSource = new CalculatorDataSource();
             IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(_projectName);
 
             //foreach (ProjectCalculationEntry projectCalculationEntry in entries)
@@ -147,13 +151,37 @@ namespace AndyMonte.Calculator
         {
             Project project = GetProject(_projectName);
 
-            // Create a TaskAggregator, passing in the project
-            CalculatorDataSource calculatorDataSource = new CalculatorDataSource("simulation");
-
-            // For each simulation run, queue a message to simulate the project estimation
-            for (int i = 0; i < _iterationCount; i++)
+            if (UseMessageBus)
             {
-                calculatorDataSource.EnQueue(project);
+                // Create the queue if it does not exist already
+                const string QueueName = "simulation";
+                string connectionString = CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
+                var namespaceManager = NamespaceManager.CreateFromConnectionString(connectionString);
+                if (!namespaceManager.QueueExists(QueueName))
+                {
+                    namespaceManager.CreateQueue(QueueName);
+                }
+
+                // Initialize the connection to Service Bus Queue
+                QueueClient queueClient = QueueClient.CreateFromConnectionString(connectionString, QueueName);
+                
+                // For each simulation run, queue a message to simulate the project estimation                
+                for (int i = 0; i < _iterationCount; i++)
+                {
+                    BrokeredMessage message = new BrokeredMessage(project);
+                    queueClient.Send(message);
+                }
+            }
+            else
+            {
+                // Create a TaskAggregator, passing in the project
+                CalculatorDataSource calculatorDataSource = new CalculatorDataSource("simulation");
+
+                // For each simulation run, queue a message to simulate the project estimation
+                for (int i = 0; i < _iterationCount; i++)
+                {
+                    calculatorDataSource.EnQueue(project);
+                }
             }
         }
     }

@@ -9,22 +9,23 @@
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:SimulationCalculator.cs" caret="709" fromTop="16" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:AggregationSummary.cs" caret="733" fromTop="21" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:ProjectCalculator.cs" caret="6266" fromTop="18" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="0" fromTop="0" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="1797" fromTop="43" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculationParameters.cs" caret="392" fromTop="11" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Global.asax.cs" caret="996" fromTop="28" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="562" fromTop="19" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Web.config" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_Chart.cshtml" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_ElapsedTime.cshtml" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Details.cshtml" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Waiting.cshtml" caret="0" fromTop="0" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Shared/f:_Layout.cshtml" caret="19" fromTop="2" />
       <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Submit.cshtml" caret="0" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Waiting.cshtml" caret="0" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:Details.cshtml" caret="0" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_ElapsedTime.cshtml" caret="0" fromTop="0" />
-      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Views/d:Summary/f:_Chart.cshtml" caret="0" fromTop="0" />
-      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="2224" fromTop="28" />
-      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1818" fromTop="22" />
       <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:TaskAggregator.cs" caret="1765" fromTop="45" />
+      <File id="C8C1BC68-58E4-4D23-B626-3D595034ECD8/f:WorkerRole.cs" caret="1818" fromTop="22" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Web.config" caret="0" fromTop="0" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:Global.asax.cs" caret="996" fromTop="28" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/f:ReadMeAndy.txt" caret="0" fromTop="0" />
+      <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="2745" fromTop="15" />
+      <File id="127D81A2-6B3D-4628-A13A-B1B08E539926/d:Controllers/f:SummaryController.cs" caret="7528" fromTop="15" />
+      <File id="A21467F4-7883-4B05-8E37-C91793E6C20C/f:CalculatorDataSource.cs" caret="501" fromTop="14" />
+      <File id="99B0B29C-8BBD-421C-B681-633B35D6060C/f:ServiceDefinition.csdef" caret="640" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
       <File id="18D753BD-9307-47B6-8C2E-067270EF4357/f:WorkerRole.cs" caret="43" fromTop="1" />

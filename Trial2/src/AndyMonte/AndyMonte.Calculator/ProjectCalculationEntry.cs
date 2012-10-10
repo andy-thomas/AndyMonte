@@ -14,7 +14,8 @@ namespace AndyMonte.Calculator
     {
         public ProjectCalculationEntry()
         {
-            PartitionKey = DateTime.UtcNow.ToString("ddMMyyyy");
+            //PartitionKey = DateTime.UtcNow.ToString("ddMMyyyy");
+            PartitionKey = Guid.NewGuid().ToString();
             // Row key allows sorting, so we make sure the rows come back in time order
             RowKey = string.Format("{0:10}_{1}", DateTime.MaxValue.Ticks - DateTime.Now.Ticks, Guid.NewGuid());
         }

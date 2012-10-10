@@ -59,3 +59,5 @@ C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\bin\DotNetOpenAuth.Open
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\obj\Debug\AndyMonte.Web.dll
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\obj\Debug\AndyMonte.Web.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\bin\Microsoft.ServiceBus.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Web\bin\Microsoft.ServiceBus.xml

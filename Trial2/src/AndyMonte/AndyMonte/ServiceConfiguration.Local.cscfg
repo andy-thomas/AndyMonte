@@ -3,24 +3,22 @@
   <Role name="AndyMonte.Web">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
+      <Setting name="AndyMonteStorageConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
     </ConfigurationSettings>
   </Role>
   <Role name="ProjectCalculatorWorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
+      <Setting name="AndyMonteStorageConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
   <Role name="SimulationRunWorkerRole">
-    <Instances count="1" />
+    <Instances count="4" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
+      <Setting name="AndyMonteStorageConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

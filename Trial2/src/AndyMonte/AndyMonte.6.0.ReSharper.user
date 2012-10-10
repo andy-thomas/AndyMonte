@@ -3,27 +3,48 @@
     <RecentFiles>
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:App_Start/f:RouteConfig.cs" caret="377" fromTop="15" />
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/f:Global.asax.cs" caret="704" fromTop="10" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculationEntry.cs" caret="335" fromTop="12" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="939" fromTop="17" />
-      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="2455" fromTop="0" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:TaskAggregator.cs" caret="16" fromTop="0" />
+      <File id="F8EF41CD-0654-4B27-B9EB-CFBB25C1324D/f:ServiceConfiguration.Local.cscfg" caret="0" fromTop="0" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:SimulationCalculator.cs" caret="172" fromTop="7" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="7108" fromTop="13" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="4477" fromTop="7" />
+      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="2978" fromTop="13" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="5458" fromTop="14" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:CalculatorDataSource.cs" caret="3046" fromTop="10" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:TaskAggregator.cs" caret="1477" fromTop="39" />
       <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="7530" fromTop="15" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:CalculatorDataSource.cs" caret="1269" fromTop="25" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculationEntry.cs" caret="744" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="8532" fromTop="34" />
-      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:CalculatorDataSource.cs" caret="3555" fromTop="12" />
-      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:App_Start/f:RouteConfig.cs" caret="537" fromTop="18" />
-      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="3767" fromTop="35" />
-      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="934" fromTop="7" />
-      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="2575" fromTop="35" />
-      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="1498" fromTop="15" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3400" fromTop="35" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="2113" fromTop="6" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="2203" fromTop="27" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="1261" fromTop="10" />
-      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="1557" fromTop="16" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3109" fromTop="11" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3117" fromTop="16" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3859" fromTop="26" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="1035" fromTop="12" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3006" fromTop="12" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="5117" fromTop="19" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="901" fromTop="10" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="816" fromTop="9" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="2078" fromTop="18" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="2370" fromTop="26" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="1633" fromTop="22" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="3114" fromTop="4" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="4746" fromTop="20" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="4005" fromTop="8" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="602" fromTop="2" />
+      <File id="46E1E3B7-CAD8-4E7D-AFAE-096646257ABB/f:WorkerRole.cs" caret="574" fromTop="7" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="7832" fromTop="17" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="380" fromTop="0" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="6406" fromTop="16" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="7844" fromTop="12" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="7301" fromTop="20" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="3151" fromTop="20" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="2006" fromTop="4" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="347" fromTop="0" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="2387" fromTop="6" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="2744" fromTop="6" />
+      <File id="F14D8B46-1181-4F78-9A60-07BBDCCD2BD2/d:Controllers/f:SummaryController.cs" caret="5375" fromTop="13" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculator.cs" caret="7108" fromTop="13" />
+      <File id="35CFFF1C-DB93-4850-9DC1-BAF428EB13CD/f:WorkerRole.cs" caret="4828" fromTop="19" />
+      <File id="60408901-1C62-4948-BBE7-5234C9D6D374/f:ProjectCalculationEntry.cs" caret="529" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -45,7 +66,43 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="null" priority="31" />
+      <Item value="null" priority="63" />
+      <Item value="Thread`0" priority="31" />
+      <Item value="dataSource" priority="95" />
+      <Item value="if" priority="159" />
+      <Item value="UseMessageBus" priority="31" />
+      <Item value="else" priority="127" />
+      <Item value="receivedMessage" priority="127" />
+      <Item value="as" priority="31" />
+      <Item value="CalculationParameters`0" priority="63" />
+      <Item value="calculationParameters" priority="31" />
+      <Item value="project" priority="63" />
+      <Item value="Project`0" priority="31" />
+      <Item value="string" priority="31" />
+      <Item value="message" priority="31" />
+      <Item value="PartitionKey" priority="31" />
+      <Item value="Guid`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AndyMonte.Calculator.CalculatorDataSource">
+      <Item value="Dispose`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@AndyMonte.Calculator.CalculatorDataSource">
+      <Item value="SerializeFromString`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.ServiceBus.Messaging.BrokeredMessage">
+      <Item value="GetBody`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.ServiceBus.Messaging.QueueClient">
+      <Item value="Send`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

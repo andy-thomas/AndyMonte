@@ -6,3 +6,6 @@ C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Trosch
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.dll
 C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\obj\Debug\AndyMonte.Calculator.pdb
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.ServiceBus.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Projects\AndyMonte\Trial2\src\AndyMonte\AndyMonte.Calculator\bin\Debug\Microsoft.ServiceBus.xml

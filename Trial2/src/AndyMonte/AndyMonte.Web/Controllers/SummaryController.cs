@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using AndyMonte.Calculator;
+using Microsoft.ServiceBus;
+using Microsoft.ServiceBus.Messaging;
+using Microsoft.WindowsAzure;
 
 namespace AndyMonte.Controllers
 {
     public class SummaryController : Controller
     {
+        private const bool UseMessageBus = true;
         //
         // GET: /Summary/
 
@@ -30,6 +34,7 @@ namespace AndyMonte.Controllers
         [HttpPost]
         public ActionResult Submit(CalculationParameters calculationParameters)
         {
+            AndyTimer.Reset();
             if (ModelState.IsValid)
             {
                 // Will put code for submitting to queue here.
@@ -52,8 +57,29 @@ namespace AndyMonte.Controllers
 
         private void InitiateCalculation(CalculationParameters calculationParameters)
         {
-            CalculatorDataSource dataSource = new CalculatorDataSource("main");
-            dataSource.EnQueue(calculationParameters);
+            if (UseMessageBus)
+            {
+                // Create the queue if it does not exist already
+                const string QueueName = "main";
+                string connectionString = CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
+                var namespaceManager = NamespaceManager.CreateFromConnectionString(connectionString);
+                if (!namespaceManager.QueueExists(QueueName))
+                {
+                    namespaceManager.CreateQueue(QueueName);
+                }
+
+                // Initialize the connection to Service Bus Queue
+                QueueClient queueClient = QueueClient.CreateFromConnectionString(connectionString, QueueName);
+
+                // For each simulation run, queue a message to simulate the project estimation
+                BrokeredMessage message = new BrokeredMessage(calculationParameters);
+                queueClient.Send(message);
+            }
+            else
+            {
+                CalculatorDataSource dataSource = new CalculatorDataSource("main");
+                dataSource.EnQueue(calculationParameters);
+            }
         }
 
         //public ActionResult Index()
@@ -92,7 +118,7 @@ namespace AndyMonte.Controllers
             else
             {
                 // Refresh the entire page every six seconds
-                Response.AddHeader("Refresh", "6");
+                Response.AddHeader("Refresh", "3");
                 //return View(timeSinceFirstRequest);
 
                 // display a timer on the screen with a partial view which refreshes every second
@@ -109,7 +135,7 @@ namespace AndyMonte.Controllers
 
             try
             {
-                CalculatorDataSource dataSource = new CalculatorDataSource("simulation");
+                CalculatorDataSource dataSource = new CalculatorDataSource();
                 IEnumerable<ProjectCalculationEntry> entries = dataSource.GetEntries(projectName);
                 int count = entries.Count();
                 calculationIsReady = count >= iterationCount;

@@ -12,15 +12,14 @@
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="AndyMonteStorageConnectionString" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" />
     </ConfigurationSettings>
   </WebRole>
   <WorkerRole name="ProjectCalculatorWorkerRole" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="Microsoft.ServiceBus.ConnectionString" />
@@ -29,7 +28,6 @@
   </WorkerRole>
   <WorkerRole name="SimulationRunWorkerRole" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="Microsoft.ServiceBus.ConnectionString" />
