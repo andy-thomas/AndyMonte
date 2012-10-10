@@ -3,22 +3,22 @@
   <Role name="AndyMonte.Web">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
-      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymonte;AccountKey=9BVA6hNF3pVzv6NClBtUJU+c5G/zRtIWh/h1NuUUlWgxu2sUVNkLzGQQwE0gAXbhj7OGBmWdSwZwOOHHnHtdJw==" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andy-thomas.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=qtBibUXVZGDQHVkkGJJZi+LNTLG8v42AH0SGPBh7oQU=" />
     </ConfigurationSettings>
   </Role>
   <Role name="ProjectCalculatorWorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andy-thomas.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=qtBibUXVZGDQHVkkGJJZi+LNTLG8v42AH0SGPBh7oQU=" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymonte;AccountKey=9BVA6hNF3pVzv6NClBtUJU+c5G/zRtIWh/h1NuUUlWgxu2sUVNkLzGQQwE0gAXbhj7OGBmWdSwZwOOHHnHtdJw==" />
     </ConfigurationSettings>
   </Role>
   <Role name="SimulationRunWorkerRole">
-    <Instances count="4" />
+    <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andythomas.servicebus.windows.net;SharedSecretIssuer=owner;SharedSecretValue=8TTW3z4e0YxaDpDV1SjylgkHtwZq1UWvV49tB4qeoHw=" />
-      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymontestorage;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://andy-thomas.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=qtBibUXVZGDQHVkkGJJZi+LNTLG8v42AH0SGPBh7oQU=" />
+      <Setting name="AndyMonteStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=andymonte;AccountKey=SH0aXacr1ELRSDsV7nAPUO64WAygOvSm54bPIwgkRwL42iUZ8gWJLmCUiVzh4/JqGEpeDJKcOiOCQpe5EPie+g==" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
